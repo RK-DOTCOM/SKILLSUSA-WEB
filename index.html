@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Metea Valley SkillsUSA Chapter</title>
+
+  <!-- Google Fonts for better typography -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+  <!-- FontAwesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+  <!-- CSS styling -->
+  <link rel="stylesheet" href="style.css">
+  
+</head>
+<body>
+
+  <!-- Header Section -->
+  <header>
+    <h1>Metea Valley SkillsUSA Chapter</h1>
+    <nav>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero" id="home">
+    <h2>Empowering Future Leaders</h2>
+    <p>Join Metea Valley’s SkillsUSA Chapter to gain leadership skills, technical knowledge, and hands-on experience for the future of work.</p>
+    <button class="cta-button">Get Involved</button>
+  </section>
+
+  <!-- About Section -->
+  <section class="about" id="about">
+    <h2>What is SkillsUSA?</h2>
+    <p>SkillsUSA is a national organization that empowers students to excel in their careers and become leaders in their communities. The Metea Valley SkillsUSA Chapter helps prepare students with the essential skills needed for success in the workforce and beyond.</p>
+    <p>Our chapter offers numerous opportunities for growth, leadership development, and technical excellence in fields ranging from engineering to business and information technology.</p>
+  </section>
+
+  <!-- Footer Section -->
+  <footer>
+    <p>&copy; 2024 Metea Valley SkillsUSA Chapter. All rights reserved.</p>
+  </footer>
+
+  <!-- JavaScript for smooth scroll and interactivity -->
+  <script>
+    // Smooth scroll for internal links
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+          behavior: 'smooth'
+        });
+      });
+    });
+
+    // Button click event for "Get Involved"
+    document.querySelector('.cta-button').addEventListener('click', function () {
+      alert('Thanks for your interest! Get ready to join and make a difference.');
+    });
+  </script>
+</body>
+</html>

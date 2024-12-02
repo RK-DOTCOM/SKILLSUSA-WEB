@@ -1,73 +1,79 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Metea Valley SkillsUSA Chapter</title>
-
-  <!-- Google Fonts for better typography -->
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
-
-  <!-- FontAwesome Icons -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-
-  <!-- CSS styling -->
-  <link rel="stylesheet" href="style.css">
-
-  <!-- Favicon -->
-  <link rel="icon" type="image/x-icon" href="/images/favicon.ico">  
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore the vibrant world of Metea Valley SkillsUSA! Empowering students to lead, innovate, and achieve through excellence in technical and leadership skills.">
+    <title>Metea Valley SkillsUSA</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
 </head>
-
 <body>
-  <div id="app">
-    <!-- Header Section -->
+
+    <!-- Header -->
     <header>
-      <h1>Metea Valley SkillsUSA Chapter</h1>
-      <nav>
-        <ul>
-          <li><a href="#home">Home</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </nav>
+        <div class="logo">
+            <img src="/images/skillusa_logo.png" alt="SkillsUSA Logo">
+            <h1>Metea Valley SkillsUSA</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#join">Join the Chapter</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
     </header>
 
     <!-- Hero Section -->
-    <section class="hero" id="home">
-      <h2>Empowering Future Leaders</h2>
-      <p>Join Metea Valley’s SkillsUSA Chapter to gain leadership skills, technical knowledge, and hands-on experience for the future of work.</p>
-      <button class="cta-button">Get Involved</button>
+    <div class="hero">
+        <h1>Welcome to Metea Valley SkillsUSA</h1>
+        <p>Empowering students to develop technical skills, leadership abilities, and personal growth!</p>
+        <button class="cta-button">Join the Chapter</button>
+    </div>
+
+    <!-- About Us Section -->
+    <section id="about">
+        <h2>About Metea Valley SkillsUSA</h2>
+        <p>SkillsUSA at Metea Valley is a student-led organization that provides opportunities for high school students to excel in career and technical education. Our chapter emphasizes leadership, teamwork, and skill-building in various fields such as engineering, healthcare, business, and more!</p>
     </section>
 
-    <!-- About Section -->
-    <section class="about" id="about">
-      <h2>What is SkillsUSA?</h2>
-      <p>SkillsUSA is a national organization that empowers students to excel in their careers and become leaders in their communities. The Metea Valley SkillsUSA Chapter helps prepare students with the essential skills needed for success in the workforce and beyond.</p>
-      <p>Our chapter offers numerous opportunities for growth, leadership development, and technical excellence in fields ranging from engineering to business and information technology.</p>
+    <!-- Comp & Events Section -->
+    <section id="events">
+        <h2>Competitions & Events</h2>
+        <div class="info-box">
+            <h3>Compete & Showcase Your Skills</h3>
+            <p>We participate in numerous local and regional competitions, where our members demonstrate their talents in various technical and leadership fields. Whether it’s in welding, business management, or technology, there’s an event for everyone!</p>
+        </div>
     </section>
 
-    <!-- Footer Section -->
+    <!-- Tech Excellence Section -->
+    <section id="tech-excellence">
+        <h2>Tech Excellence</h2>
+        <div class="info-box">
+            <h3>Developing Skills for the Future</h3>
+            <p>At Metea Valley SkillsUSA, we prioritize hands-on learning and real-world applications. Our students have the opportunity to master the latest technologies and tools in their respective fields, ensuring they’re prepared for the workforce.</p>
+        </div>
+    </section>
+
+    <!-- Join the Chapter Section -->
+    <section id="join">
+        <h2>Join the Chapter</h2>
+        <p>Become part of a thriving community of students dedicated to honing their skills and shaping the future! We offer various opportunities to get involved and grow within the organization.</p>
+        <button class="cta-button">Sign Up Today</button>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <p>If you have any questions or want to know more about Metea Valley SkillsUSA, don't hesitate to reach out to us! We're here to help.</p>
+    </section>
+
+    <!-- Footer -->
     <footer>
-      <p>&copy; 2024 Metea Valley SkillsUSA Chapter. All rights reserved.</p>
+        <p>&copy; 2024 Metea Valley SkillsUSA Chapter | All Rights Reserved</p>
     </footer>
-  </div>
-  <!-- JavaScript for smooth scroll and interactivity -->
-  <script src="script.js">
-    // Smooth scroll for internal links
-    /*document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-      anchor.addEventListener('click', function (e) {
-        e.preventDefault();
-        document.querySelector(this.getAttribute('href')).scrollIntoView({
-          behavior: 'smooth'
-        });
-      });
-    });
 
-    // Button click event for "Get Involved"
-    document.querySelector('.cta-button').addEventListener('click', function () {
-      alert('Thanks for your interest! Get ready to join and make a difference.');
-    }); */
-  </script>
 </body>
 </html>

@@ -8,11 +8,11 @@ const route = (event) => {
 
 //contains possible paths as keys and html files that need to be displayed according to the paths
 const routes = {
-  404: "/pages/404.html",
-  "/": "/pages/home.html",
-  "/about": "/pages/about.html",
-  "/contact-us": "/pages/contact.html",
-  "/join-us": "/pages/join.html",
+  404: "/static/pages/404.html",
+  "/": "/static/pages/home.html",
+  "/about": "/static/pages/about.html",
+  "/contact-us": "/static/pages/contact.html",
+  "/join-us": "/static/pages/join.html",
 };
 
 //function to handle changing the location => called everytime a navigation is made

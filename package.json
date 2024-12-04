@@ -1,5 +1,17 @@
 {
   "dependencies": {
+    "express": "^4.21.1",
     "live-server": "^1.2.2"
-  }
+  },
+  "name": "skillsusa-web",
+  "version": "1.0.0",
+  "description": "**To run on a local host, install Node.js and install dependencies in the root directory:**",
+  "main": "router.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
 }

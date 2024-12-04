@@ -1,7 +1,7 @@
 # SKILLSUSA-WEB
 
-**To run on a local host, install Node.js and install live server in the root directory:**
+**To run locally, install Node.js and install dependencies in the root directory:**
 
-npm install -g live-server
+npm install
 
-**To host the site, enter this into the console whilst being in the directory you installed live server in:** live-server
+**Then type** "node server.js" **in the console and visit** http://localhost:3000/

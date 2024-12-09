@@ -1,3 +1,8 @@
+//thank you event for form submission
+function formSubmission() {
+  location.pathname = '/thank-you';
+}
+
 //function to handle default link behavior and changes in location
 const route = (event) => {
   event = event || window.event;  //captures the click event for the link
@@ -13,6 +18,7 @@ const routes = {
   "/about": "/static/pages/about.html",
   "/contact-us": "/static/pages/contact.html",
   "/join-us": "/static/pages/join.html",
+  "/thank-you": "/static/pages/thankyou.html",
 };
 
 //function to handle changing the location => called everytime a navigation is made

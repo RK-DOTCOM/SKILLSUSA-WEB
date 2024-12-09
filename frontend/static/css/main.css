@@ -1,24 +1,54 @@
-
-body {
-  font-family: 'Roboto', sans-serif;
+/* General styles */
+* {
   margin: 0;
   padding: 0;
-  color: #333;
-  background-color: #fffbe0; /* Soft yellow background */
-  line-height: 1.6;
 }
 
+/* Fade-in Animation */
+@keyframes fadeIn {
+	from {
+		opacity: 0;
+		transform: translateY(10px);
+	}
+
+	to {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: #2f2f2f;
+  color: #ffffff;
+  line-height: 1.5;
+}
+
+h1, h2, h3 {
+  font-family: 'League Spartan', sans-serif;
+  color: #fbd930;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* Home page styles */
 /* Header */
 header {
-  background-color: #000;
-  color: #fff;
+  background-color: #444;
+  color: #fbd930;
   padding: 1rem 2rem;
   display: flex;
-  align-items: center;
   justify-content: space-between;
-  position: sticky;
-  top: 0;
-  z-index: 1000;
+  align-items: center;
 }
 
 header .logo {
@@ -27,124 +57,403 @@ header .logo {
 }
 
 header .logo img {
-  width: 100px;
-  margin-right: 1rem;
+  height: 2.5vw;
+  margin-right: 10px;
 }
 
 header nav ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
   display: flex;
   gap: 1.5rem;
-  align-items: center;
+}
+
+header nav ul li {
+  padding: 0.5rem 1rem;
 }
 
 header nav ul li a {
-  text-decoration: none;
-  color: #fff;
-  font-weight: 600;
-  font-size: 1rem;
-  text-transform: none; /* Normal capitalization */
-  transition: color 0.3s, transform 0.3s;
+  font-weight: bold;
+  transition: color 0.3s;
 }
 
 header nav ul li a:hover {
-  color: #ffd700; /* Gold hover effect */
-  transform: scale(1.1);
+  color: #ffffff;
 }
 
 /* Hero Section */
 .hero {
-  background: linear-gradient(135deg, #ffffff, #ff4747, #005BAC); /* Gradient with slant */
-  color: #fff;
-  text-align: center;
-  padding: 12rem 2rem 6rem 2rem; /* Extended gradient and comfortable padding */
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  /*text-align: center;*/
+  margin: 10rem 1rem 10rem 1rem;
+  padding: 2rem 1rem;
+  border-radius: 10px;
+  color: #ffffff;
 }
 
-.hero h1 {
-  font-size: 3rem;
-  font-weight: 700;
-  margin-bottom: 1rem;
+.hero #hero-section {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  text-align: left;
+  padding-left: 3rem;
+  padding-right: 0;
 }
 
-.hero p {
+.hero #hero-section #headings h1 {
+  font-size: 6rem;
+  animation: fadeIn 1s ease-in-out;
+}
+
+.hero #hero-section #headings p {
   font-size: 1.5rem;
+  margin-top: .5rem;
   margin-bottom: 2rem;
+  max-width: 75%;
+  animation: fadeIn 2s ease-in-out;
+}
+
+.hero #home-image {
+  align-items: center;
+}
+
+.hero #home-image img {
+  max-width: 80%;
+  display: block;
+  margin: 1rem auto 0;
+  border-radius: 100px;
+  animation: fadeIn 1s ease-in-out;
 }
 
 .cta-button {
-  background-color: #ffd700; /* Gold button */
-  color: #000;
-  padding: 1rem 2rem;
-  font-size: 1.2rem;
-  font-weight: bold;
+  background-color: #ffcc00;
+  color: #2f2f2f;
+  padding: 1rem 5rem;
   border: none;
-  border-radius: 5px;
-  text-transform: none; /* No all caps */
+  border-radius: 25px;
   cursor: pointer;
-  transition: background-color 0.3s, transform 0.3s;
+  font-size: 1.5rem;
+  font-weight: bold;
+  animation: fadeIn 3s ease-in-out;
+  transition: background-color 0.3s, color 0.3s;
 }
 
 .cta-button:hover {
-  background-color: #ff4747; /* Red hover effect */
-  transform: scale(1.05);
+  background-color: #ffffff;
+  color: #000000;
 }
 
 /* Sections */
 section {
-  padding: 5rem 2rem;
+  padding: 2rem 1rem;
+  margin: 1.5rem 0;
   text-align: center;
 }
 
-section h2 {
-  font-size: 2.5rem;
-  font-weight: 600;
-  margin-bottom: 1rem;
-  color: #000;
+section h1 {
+  font-size: 4rem;
 }
 
 section p {
-  font-size: 1.2rem;
-  color: #555;
-  max-width: 900px;
-  margin: 0 auto 2rem;
+  font-size: 1.5rem;
 }
 
-.info-box {
-  background-color: #fff;
-  border: 1px solid #ddd;
-  padding: 2rem;
-  margin: 2rem 0;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s, box-shadow 0.3s;
+/* About Section */
+section#about {
+  margin-top: 3rem;
+  margin-bottom: 5rem;
 }
 
-.info-box:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+section#about h1 {
+  margin-bottom: 1rem;
+  font-size: 4rem;
 }
 
-.info-box h3 {
-  font-size: 1.8rem;
-  color: #000;
+section#about p {
+  padding-left: 20%;
+  padding-right: 20%;
   margin-bottom: 1rem;
 }
 
-.info-box p {
-  font-size: 1.1rem;
-  color: #555;
+section#about iframe {
+  border-radius: 30px;
+  width: 75rem;
+  height: 40rem;
+}
+/* Perks Section */
+section#perks {
+  display:flex;
+  justify-content: space-around;
+  align-items: center;
 }
 
+#perks-title h1{
+  font-size: 4rem;
+  text-align: center;
+}
+
+.perk-box {
+  background-color: #3b3b3b;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+.perk-box img {
+  max-width: 50%;
+  margin-top: 1rem;
+}
+
+.perk-box h3 {
+  font-size: 3rem;
+  margin-top: 1rem;
+}
+
+.perk-box p {
+  padding-bottom: 5%;
+}
+
+.perk-box-title {
+  max-width: 50%;
+}
+
+.perk-box-description {
+  max-width: 75%;
+}
+
+/* Join Us Section */
+section#join {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  text-align: left;
+  padding-left: 5rem;
+  padding-right: 5rem;
+  margin-top: 5rem;
+  margin-bottom: 0;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url(/static/images/metea-valley-join-the-chapter.png);
+  background-position: center;
+  background-size: cover;
+  height: 25vw;
+}
+
+section#join img {
+  max-width: 50%;
+}
+
+section#join p {
+  max-width: 50%;
+  margin-bottom: 2rem;
+}
+
+.transforming-button {
+  margin-top: 1rem;
+  padding: 1rem 6rem;
+  font-size: 1rem;
+  font-weight: bold;
+  color: #2f2f2f;
+  background-color: #fbd930;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s, transform 0.3s;
+}
+
+.transforming-button:hover {
+  background-color: #2f2f2f;
+  color: #fbd930;
+  transform: scale(1.1);
+}
+/* Contact Us Section */
+section#contact {
+  margin: 0 0;
+  background-color: #fbd930;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  color: #2f2f2f;
+}
+
+section#contact h1, h2{
+  color: #2f2f2f;
+}
+
+.contacts {
+  margin-top: 5rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.contact-box {
+  border-radius: 5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 50%;
+  padding: 2rem 1rem;
+}
+
+.contact-box img {
+  max-width: 50%;
+  border-radius: 3rem;
+  margin-bottom: 2rem;
+}
+
+.contact-box h2 {
+  font-size: 3rem;
+}
+
+/* Other general components */
+.info-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #3b3b3b;
+  padding: 1.5rem;
+  margin: 1rem auto;
+  border-radius: 10px;
+  max-width: 800px;
+}
+
+.info-box p {
+  margin: 0.5rem 0 1rem 0;
+}
+
+.info-box h2 {
+  color: #fbd930;
+  font-size: 3rem;
+}
+
+.main-content {
+  background-color:#3b3b3b;
+  border-radius: 15px;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 75%;
+}
+
+.main-content ul {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.main-content ul li {
+  margin: .5rem;
+  padding: .5rem 1.5rem;
+  background-color: #303030;
+  border-radius: 10px;
+}
 /* Footer */
 footer {
-  background-color: #000;
-  color: #fff;
+  background-color: #333;
   text-align: center;
-  padding: 2rem;
+  padding: 1rem;
+  font-size: 0.9rem;
+  color: #bbb;
 }
 
 footer p {
-  font-size: 1rem;
+  margin: 0;
+}
+
+/* Styles for the other pages */
+.page-headings {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 10rem 5rem;
+  height: 25vw;
+  margin: 0 0;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url(/static/images/metea-valley-photo.png);
+  background-position: center;
+  background-size: cover;
+}
+.page-headings h1 {
+  font-size: 6rem;
+  margin-bottom: 0.5rem;
+  animation: fadeIn 1s ease-in-out;
+}
+
+.page-headings p {
+  font-size: 1.5rem;
+  animation: fadeIn 2s ease-in-out;
+
+}
+/* About page */
+#values {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+input {
+  width: 30rem;
+  height: 3rem;
+  margin: .5rem;
+  border-radius: 5px;
+}
+
+textarea {
+  width: 30rem;
+  height: 10rem;
+  margin: .5rem;
+  border-radius: 5px;
+}
+
+/* Contact Us Page */
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Media Queries (makes website appear decent on different screen sizes) */
+@media screen and (max-width: 1800px) {
+  * {
+    margin: 0;
+    padding: 0;
+    font-size: 1vw;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  * {
+    font-size: 1.5vw;
+  }
+  .hero {
+    flex-wrap: wrap;
+  }
+
+  #perks {
+    flex-wrap: wrap;
+  }
+
+  #contact {
+    flex-wrap: wrap;
+  }
+
+  section#join {
+    margin-top: 5rem;
+    height: 75rem;
+  }
+
+  .page-headings {
+    height: 25rem;
+  }
+
+  section#about iframe {
+    width: 40rem;
+    height: 20rem;
+  }
 }

@@ -4,54 +4,88 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Explore the vibrant world of Metea Valley SkillsUSA! Empowering students to lead, innovate, and achieve through excellence in technical and leadership skills.">
-    <title>Metea Valley SkillsUSA</title>
+    <title>MV SkillsUSA</title>
 </head>
 <body>
-
     <!-- Hero Section -->
     <div class="hero">
-        <h1>Welcome to Metea Valley SkillsUSA</h1>
-        <p>Empowering students to develop technical skills, leadership abilities, and personal growth!</p>
-        <button class="cta-button"><a href="/join-us" onclick="route()">Join the Chapter</a></button>
+        <section id="hero-section">
+            <div id="headings">
+                <h1>Become as skilled as a professional.</h1>
+                <p>Join the Metea Valley SkillsUSA Chapter to advance your skills through experience and competition.</p>
+            </div>
+            <div id="cta"><a href="/join-us" onclick="route()" class="cta-button">Sign up</a></div>
+        </section>
+        <figure id="home-image"><img src="/static/images/hero-image.png" alt="Homepage Image"></figure>
     </div>
 
     <!-- About Us Section -->
     <section id="about">
-        <h2>About Metea Valley SkillsUSA</h2>
-        <p>SkillsUSA at Metea Valley is a student-led organization that provides opportunities for high school students to excel in career and technical education. Our chapter emphasizes leadership, teamwork, and skill-building in various fields such as engineering, healthcare, business, and more!</p>
+        <h1>Want skills? We got you covered.</h1>
+        <p>Here at Metea Valley, we strive to empower students to become as prepared as possible for the workplace. Through SkillsUSA, we lead students to harness their abilities and excel in career and technical education. </p>
+        <iframe src="https://www.youtube.com/embed/8DDJA4v0bk0"></iframe>
     </section>
 
-    <!-- Comp & Events Section -->
-    <section id="events">
-        <h2>Competitions & Events</h2>
-        <div class="info-box">
-            <h3>Compete & Showcase Your Skills</h3>
-            <p>We participate in numerous local and regional competitions, where our members demonstrate their talents in various technical and leadership fields. Whether it’s in welding, business management, or technology, there’s an event for everyone!</p>
+    <!-- Perks Section -->
+    <div id="perks-title"><h1>Why join?</h1></div>
+    <section id="perks">
+        <div class="perk-box">
+            <div class="perk-box-img"><img src="/static/images/discover-image.png"/></div>
+            <div class="perk-box-title"><h3>Discover</h3></div>
+            <div class="perk-box-description"><p>Come across opportunities to experiment with new areas of focus that you haven't seen.</p></div>
+        </div>
+        <div class="perk-box">
+            <div class="perk-box-img"><img src="/static/images/learn-image.png"/></div>
+            <div class="perk-box-title"><h3>Learn</h3></div>
+            <div class="perk-box-description"><p>Find new ways to challenge your mind on your area of interest with like-minded peers.</p></div>
+        </div>
+        <div class="perk-box">
+            <div class="perk-box-img"><img src="/static/images/compete-image.png"/></div>
+            <div class="perk-box-title"><h3>Compete</h3></div>
+            <div class="perk-box-description"><p>Engage in local, state, and even national competitions to demonstrate your talents.</p></div>
         </div>
     </section>
 
-    <!-- Tech Excellence Section -->
-    <section id="tech-excellence">
-        <h2>Tech Excellence</h2>
+    <!-- Learn More Section -->
+    <section id="learn">
         <div class="info-box">
-            <h3>Developing Skills for the Future</h3>
-            <p>At Metea Valley SkillsUSA, we prioritize hands-on learning and real-world applications. Our students have the opportunity to master the latest technologies and tools in their respective fields, ensuring they’re prepared for the workforce.</p>
+            <h1>Need more info?</h1>
+            <p>Checkout our about page to learn more about the Metea Valley SkillsUSA Chapter.</p>
+            <a href="/about" onclick="route()" class="transforming-button">Learn More</a>
         </div>
     </section>
 
     <!-- Join the Chapter Section -->
     <section id="join">
-        <h2>Join the Chapter</h2>
-        <p>Become part of a thriving community of students dedicated to honing their skills and shaping the future! We offer various opportunities to get involved and grow within the organization.</p>
-        <button class="cta-button">Sign Up Today</button>
+        <div class="section-content-left">
+            <h1>Join the Chapter</h1>
+            <p>Become part of a thriving community of students dedicated to honing their skills and shaping the future! We offer various opportunities to get involved and grow within the organization.</p>
+            <a href="/join-us" onclick="route()" class="transforming-button">Sign Up Today</a>
+        </div>
+        <img src="/static/images/skillusa-logo.png"/>
     </section>
-
+    
     <!-- Contact Section -->
     <section id="contact">
-        <h2>Contact Us</h2>
+        <h1>Contact Us</h1>
         <p>If you have any questions or want to know more about Metea Valley SkillsUSA, don't hesitate to reach out to us! We're here to help.</p>
+        <div class="contacts">
+            <div class="contact-box">
+                <img src="/static/images/school-logo.png"/>
+                <h2>Address</h2>
+                <p>1801 N Eola Rd, Aurora, IL 60502</p>
+            </div>
+            <div class="contact-box">
+                <img src="/static/images/phone-logo.png"/>
+                <h2>Phone</h2>
+                <p>123-456-789</p>
+            </div>
+            <div class="contact-box">
+                <img src="/static/images/email-gif.gif"/>
+                <h2>Email</h2>
+                <p>nathan_wedam@ipsd.org</p>
+            </div>
+        </div>
     </section>
-
-
 </body>
 </html>

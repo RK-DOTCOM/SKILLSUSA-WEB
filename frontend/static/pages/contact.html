@@ -4,32 +4,31 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Get in touch with Metea Valley SkillsUSA. We're here to help with any questions regarding events, competitions, or membership.">
-    <title>Contact Us - Metea Valley SkillsUSA</title>
+    <title>Contact Us - MV SkillsUSA</title>
     
 </head>
 <body>
-
-    <!-- Contact Hero Section -->
-    <div class="hero">
+    <!-- Contact Headings -->
+    <div class="page-headings" id="contact-headings">
         <h1>Contact Us</h1>
-        <p>Have questions? We're here to help! Reach out to us for more information on membership, events, or competitions.</p>
+        <p>Address: 1801 N Eola Rd, Aurora, IL 60502</p>
+        <p>Phone: 123-456-789</p>
+        <p>Email: nathan_wedam@ipsd.org</p>
     </div>
 
     <!-- Contact Form Section -->
-    <section>
-        <h2>We’d Love to Hear From You!</h2>
+    <section class="main-content">
+        <h1>We’d Love to Hear From You!</h1>
         <p>Feel free to reach out to us with any questions or suggestions. We’re always happy to assist with any inquiries related to SkillsUSA events, membership, or anything else you may need!</p>
 
         <div class="contact-form">
-            <form action="submit_form.php" method="POST">
+            <form class="contact-form">
                 <input type="text" name="name" placeholder="Your Name" required>
                 <input type="email" name="email" placeholder="Your Email" required>
                 <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
-                <button type="submit">Send Message</button>
+                <button type="submit" class="transforming-button" onclick=formSubmission();>Send Message</button>
             </form>
         </div>
     </section>
-
-
 </body>
 </html>

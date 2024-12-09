@@ -309,6 +309,21 @@ section#contact h1, h2{
   font-size: 3rem;
 }
 
+
+/* Footer */
+footer {
+  background-color: #333;
+  text-align: center;
+  padding: 1rem;
+  font-size: 0.9rem;
+  color: #bbb;
+}
+
+footer p {
+  margin: 0;
+}
+
+/* Styles for the other pages */
 /* Other general components */
 .info-box {
   display: flex;
@@ -352,20 +367,7 @@ section#contact h1, h2{
   background-color: #303030;
   border-radius: 10px;
 }
-/* Footer */
-footer {
-  background-color: #333;
-  text-align: center;
-  padding: 1rem;
-  font-size: 0.9rem;
-  color: #bbb;
-}
 
-footer p {
-  margin: 0;
-}
-
-/* Styles for the other pages */
 .page-headings {
   display: flex;
   flex-direction: column;

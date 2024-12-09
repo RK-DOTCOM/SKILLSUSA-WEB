@@ -4,4 +4,4 @@
 
 npm install
 
-**Then type** "node server.js" **in the console and visit** http://localhost:3000/
+**Then type** "node server.js" **in the console and visit** http://localhost:8000/
